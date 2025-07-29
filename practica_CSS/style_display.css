@@ -1,0 +1,41 @@
+.first-line {
+    width: 800px;
+    height: 170px;
+    background-color: yellow;
+    align-items:center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.img-first-line {
+    width: 120px;
+    height: 130px;
+    margin: 0 10px;
+}
+
+.second-line {
+    width: 800px;
+    height: 170px;
+    background-color:aqua;
+    align-items:center;
+    display: flex;
+    justify-content: space-evenly
+    
+}
+
+.third-line {
+    width: 800px;
+    height: 170px;
+    background-color:tomato;
+    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.img-third-line {
+    width: 120px;
+    height: 130px;
+    margin: 0 40px;
+}
