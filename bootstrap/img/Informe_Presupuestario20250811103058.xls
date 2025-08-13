@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Exporta Excel</title>
+</head>
+
+<body>
+  <p>MASCONSTRUYE - Centro de costos: <strong>
+      <spam>ECONORENT  PUDAHUEL </spam>
+    </strong></p>
+  <h3>INFORME PRESUPUESTARIO DE COMPRAS ENTRE FECHAS </h3>
+  <p style="font-size:14px">Desde: 2025-07-09 - Hasta: 2025-08-11 Familia: Todas </p>
+
+
+  <table width="80%" border="1">
+    <caption>Presupuesto de Obra: </caption>
+    <thead>
+      <tr>
+        <th scope="col" class="bg-info">
+          <div align="center">Total Presupuestado </div>
+        </th>
+        <th scope="col" class="bg-info">
+          <div align="center">Materiales</div>
+        </th>
+        <th scope="col" class="bg-info">
+          <div align="center">Mano de Obra Directa</div>
+        </th>
+        <th scope="col" class="bg-info">
+          <div align="center">Subcontratos</div>
+        </th>
+        <th scope="col" class="bg-info">
+          <div align="center">Otros</div>
+        </th>
+        <th scope="col" class="bg-danger">
+          <div align="center">Total Comprado con O/C</div>
+        </th>
+        <th scope="col" class="bg-danger">
+          <div align="center">Diferencia sin M.O.</div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1,336,840,511</td>
+        <td align="center">324,836,691</td>
+        <td align="center">72,172,124</td>
+        <td align="center">616,460,324</td>
+        <td align="center">323371371.29737</td>
+        <td align="center">999,920</td>
+        <td align="center">1,263,668,466</td>
+
+      </tr>
+    </tbody>
+  </table>
+  <p></p>
+  <table width="100%" border="1">
+    <caption>Total Registros: 3</caption>
+    <thead>
+      <tr>
+        <th scope="col">
+          <div align="center"></div>
+        </th>
+        <th scope="col">
+          <div align="center">Descripción</div>
+        </th>
+        <th scope="col">
+          <div align="center">Unidad</div>
+        </th>
+        <th scope="col">
+          <div align="center">Cantidad Comprada</div>
+        </th>
+        <th scope="col" class="bg-danger">
+          <div align="center">Total Comprado</div>
+        </th>
+        <th scope="col">
+          <div align="center">Cantidad Presupuestada</div>
+        </th>
+        <th scope="col">
+          <div align="center">Total Presupuestada</div>
+        </th>
+        <th scope="col">
+          <div align="center">Dif. Cantidad</div>
+        </th>
+        <th scope="col">
+          <div align="center">Dif. Total</div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+              <tr style="font-size:11px;">
+          <td align="center">1</td>
+          <td>CUARTON PINO 3X3X3200</td>
+          <td align="center">UN</td>
+          <td align="right">192</td>
+          <td align="right">529,920</td>
+          <td align="right">2</td>
+          <td align="right">7,240</td>
+          <td align="right">-190</td>
+          <td align="right">-522,680</td>
+
+        </tr>
+              <tr style="font-size:11px;">
+          <td align="center">2</td>
+          <td>FLETE A OBRA</td>
+          <td align="center">UN</td>
+          <td align="right">2</td>
+          <td align="right">220,000</td>
+          <td align="right">3</td>
+          <td align="right">254,943</td>
+          <td align="right">1</td>
+          <td align="right">34,943</td>
+
+        </tr>
+              <tr style="font-size:11px;">
+          <td align="center">3</td>
+          <td>ARRIENDO MINICARGADOR INCLUYE OPERADOR CON COMBUSTIBLE</td>
+          <td align="center">HR</td>
+          <td align="right">1</td>
+          <td align="right">250,000</td>
+          <td align="right">79</td>
+          <td align="right">2,365,800</td>
+          <td align="right">78</td>
+          <td align="right">2,115,800</td>
+
+        </tr>
+      
+
+    </tbody>
+  </table>
+
+
+</body>
+
+</html>

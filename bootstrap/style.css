@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: #be7da0;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 10px 30px;
+    font-size: 24px;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-weight: bold;
+    
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+#title-header {
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+#spanH1{
+    color: white;
+}
+
+#iniciaSesion {
+    border: 2px solid;
+    box-shadow: 5px 3px 10px black;
+    padding: 5px;
+}
+
+.subnav {
+    background-color:gainsboro;
+    padding: 10px 0;
+}
+
+.subnav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.subnav li {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flor-mes {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#img-mes {
+    width: 500px;
+    height: 250px;
+}
+#infoResultados {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.galeria-productos {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.producto {
+    background: #f5f5f5;
+    width: 240px;
+    text-align: left;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto img {
+    width: 80%;
+    border: 2px solid #222;
+    margin-bottom: 8px;
+    background: #fff;
+}
+
+.info-producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.info-producto > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.nombre-producto{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.precio {
+    color: #be7da0;
+    font-weight: bold;
+    margin: 8px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.comprar {
+    background: #be7da0;
+    color: #fff;
+    border: none;
+    padding: 5px 17px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+footer {
+    background: #be7da0;
+    padding: 10px;
+}
+
+
+
