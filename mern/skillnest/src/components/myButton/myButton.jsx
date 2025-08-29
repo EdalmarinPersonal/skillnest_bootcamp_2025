@@ -1,5 +1,7 @@
-export function FirstButton() {
-  return <button>botón del método 1</button>;
+export function FirstButton(props) {
+  console.log(props);
+  var estiloBoton = { color: 'blue', backgroundColor: 'yellow' };
+  return <button style={estiloBoton}>{props.title}</button>;
 }
 
 export function FirstInput() {
