@@ -8,7 +8,6 @@ const MyForm = () => {
     const [terminos, setTerminos] = useState(false);
 
     const validar = (event) => {
-        event.preventDefault();
         if (name === "" || email === "" || password === "" || passwordConfirm === "" || tipo === "" || !terminos) {
             alert("Por favor, complete todos los campos y acepte los términos y condiciones.");
         } else if (password !== passwordConfirm) {
@@ -38,7 +37,7 @@ const MyForm = () => {
             <input type="radio" id="tipo" name="tipo" value="Admin" onChange={(event) => setTipo(event.target.value)} />
             <label htmlFor="tipo">Admin</label>
             <input type="radio" id="tipos" name="tipo" value="Simple" onChange={(event) => setTipo(event.target.value)} />
-            <label htmlFor="tipo">Simple</label>
+            <label htmlFor="tipos">Simple</label>
             <br />
             <input type="checkbox" id="terminos" name="terminos" onChange={(event) => setTerminos(event.target.checked)} checked={terminos} />
             <label htmlFor="terminos">Acepto los términos y condiciones</label>
