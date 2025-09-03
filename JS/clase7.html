@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <style>
+      .btnsuma {
+        background-color: lightgreen;
+      }
+      .btnresta {
+        background-color: lightskyblue;
+      }
+      .btndividir {
+        background-color: aquamarine;
+      }
+      .btnmultiplicar {
+        background-color: lightcoral;
+      }
+      .btnlimpiar {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="number" id="num1"  />
+      <input type="number" id="num2" />
+    </div>
+    <br />
+    <div>
+      <button id="sumar" onclick="suma()">Suma</button>
+      <button id="restar" class="btnresta" onclick="resta()">Resta</button>
+      <button id="dividir" class="btndividir" onclick="dividir()">
+        Dividir
+      </button>
+      <button id="multiplicar" class="btnmultiplicar" onclick="multiplicar()">
+        Multiplicar
+      </button>
+    </div>
+    <br />
+    <div>
+      <label for="resultado">Resultado:</label>
+      <input type="text" id="resultado" />
+      <button id="limpiar" class="btnlimpiar" onclick="limpiar()">
+        Limpiar
+      </button>
+    </div>
+    <script>
+      const num1 = document.querySelector("#num1");
+      const num2 = document.querySelector("#num2");
+      const resultado = document.querySelector("#resultado");
+      function suma() {
+        resultado.value = parseFloat(num1.value) + parseFloat(num2.value);
+      }
+      function resta() {
+        resultado.value = parseFloat(num1.value) - parseFloat(num2.value);
+      }
+      function dividir() {
+        if (parseFloat(num2.value) !== 0) {
+          resultado.value = parseFloat(num1.value) / parseFloat(num2.value);
+        } else {
+          alert("Error: División por cero");
+        }
+      }
+      function multiplicar() {
+        resultado.value = parseFloat(num1.value) * parseFloat(num2.value);
+      }
+      function limpiar() {
+        num1.value = "";
+        num2.value = "";
+        resultado.value = "";
+      }
+    </script>
+  </body>
+</html>

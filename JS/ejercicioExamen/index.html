@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea</title>
+
+    <style>
+      * {
+        margin: 0;
+      }
+
+      header {
+        background-color: #3498f7;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0px;
+      }
+
+      header ul {
+        display: flex;
+        gap: 20px;
+      }
+
+      header ul li {
+        list-style: none;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0px;
+      }
+      .cuadro {
+        border: 1px solid grey;
+        border-radius: 10px;
+        display: flex;
+      }
+      .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      #cookies {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+      }
+      .button {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tiempo Local</h1>
+      <nav>
+        <ul>
+          <li>Buenos Aires</li>
+          <li>Bogota</li>
+          <li>Asuncion</li>
+          <li>Lima</li>
+          <li>Santiago</li>
+        </ul>
+      </nav>
+
+      <div>
+        <label for="temperatura">Mostrar Temperatura en</label>
+        <select id="temperatura" onchange="cambiarTemperatura(this)">
+          <option value="C">C</option>
+          <option value="F">F</option>
+        </select>
+      </div>
+    </header>
+    <section>
+      <h2>Buenos Aires</h2>
+      <div class="contenedor">
+        <div class="cuadro">
+          <img src="https://placehold.co/80x80" alt="Weather Icon" />
+          <p>Hoy</p>
+          <p>Nublado</p>
+          <p>22°<span class="temp">C</span>C 25°<span class="temp">C</span></p>
+        </div>
+        <div class="cuadro">
+          <img src="" alt="Weather Icon" />
+          <p>Mañana</p>
+          <p>Lluvioso</p>
+          <p>20°<span class="temp">C</span>C 13°<span class="temp">C</span></p>
+        </div>
+        <div class="cuadro">
+          <img
+            src="https://www.weatherbit.io/static/img/icons/c01d.png"
+            alt="Weather Icon"
+          />
+          <p>Miércoles</p>
+          <p>Tormentas</p>
+          <p>18°<span class="temp">C</span>C 11°<span class="temp">C</span></p>
+        </div>
+        <div class="cuadro">
+          <img
+            src="https://www.weatherbit.io/static/img/icons/c01d.png"
+            alt="Weather Icon"
+          />
+          <p>Jueves</p>
+          <p>Parcialmente Nublado</p>
+          <p>19°<span class="temp">C</span>C 12°<span class="temp">C</span></p>
+        </div>
+        <div class="cuadro">
+          <img
+            src="https://www.weatherbit.io/static/img/icons/c01d.png"
+            alt="Weather Icon"
+          />
+          <p>Viernes</p>
+          <p>Soleado</p>
+          <p>20°<span class="temp">C</span>C 13°<span class="temp">C</span></p>
+        </div>
+      </div>
+    </section>
+    <div id="cookies">
+      <p>
+        Detente! Tiempo de cookies. Usamos cookies. Para personalizar contenido
+        y anuncios, proporcionar funciones de redes sociales.
+        <a href="#">Leer más...</a><button class="button">Acepto</button>
+      </p>
+    </div>
+    <script>
+      function cambiarTemperatura(element) {
+        var unidad = element.value;
+        var temperaturas = document.querySelectorAll(".temp");
+       
+        if (unidad === "C") {
+          
+        } else {
+          document.getElementsByClassName("temp").innerHTML = "F";
+        }
+      }
+    </script>
+  </body>
+</html>

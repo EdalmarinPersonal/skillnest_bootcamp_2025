@@ -7,29 +7,67 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>Perfil de Usuario</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Perfil</a></li>
+          <li><a href="#">Encontrar conexiones</a></li>
+          <li><button id="cerrarSesion">Cerrar sesión</button></li>
+        </ul>
+      </nav>
+    </header>
     <div class="contenedor">
-      <div class="profile-card">
+      <section class="profile-card">
         <div class="profile-header"></div>
         <img src="img/perfil.png" alt="Foto de perfil" class="profile-photo" />
-        <div class="profile-name">Edgar Marín</div>
-        <div class="profile-location">Santiago , Chile</div>
-        <div class="profile-titles">Desarrollador Web | Backend</div>
-        <div class="profile-description">
-          Apasionado por las tecnologías y la fotografía. Tomar café y disfrutar
-          el día, mis pasatiempos.
+        <h2 class="profile-name">Edgar Marín</h2>
+        <div class="profile-info">Santiago, Chile</div>
+        <div class="profile-info">
+          Desarrollador Web | Backend
         </div>
-        <button class="edit-btn">Editar Perfil</button>
-      </div>
-      <div class="columna">
-        <h2>Solicitudes de conexión</h2>
-        <div class="seccion">
-          <p><strong>Kai Schröder</strong>   </p>
-          <div class="botones">
-            <button>Aceptar</button>
-            <button>Rechazar</button>
+        <p class="profile-description">
+          Me gusta el desarrollo web y las fotos de atardeceres.
+        </p>
+        <a class="edit-btn" href="#"><img src="img/rueda.png" alt=""> Editar perfil</a>
+        <section class="education">
+          <h3>Educación</h3>
+          <div>
+            Bootcamp de Desarrollo Full Stack<br>
+            2025<br>
           </div>
-        </div>
-      </div>
-    </div>
+        </section>
+      </section>
+  <div class="sidebar">
+    <section class="solicitudes">
+      <h3>Solicitudes de Conexión (2)</h3>
+      <ul>
+        <li>
+          <img src="img/perfil.png" alt="Kai Schröder" class="mini-photo">
+          Kai Schröder
+          <button class="btn-aceptar">&#10003;</button>
+          <button class="btn-rechazar">&#10005;</button>
+        </li>
+        <li>
+          <img src="img/perfil.png" alt="Amira El-Masry" class="mini-photo">
+          Amira El-Masry
+          <button class="btn-aceptar">&#10003;</button>
+          <button class="btn-rechazar">&#10005;</button>
+        </li>
+      </ul>
+    </section>
+    <section class="conexiones">
+      <h3>Tus Conexiones (500+)</h3>
+      <ul>
+        <li><img src="img/perfil.png" alt="" class="mini-photo"> Adrien Desplatz</li>
+        <li><img src="img/perfil.png" alt="" class="mini-photo"> Aarav Patel</li>
+        <li><img src="img/perfil.png" alt="" class="mini-photo"> Lina Kovačević</li>
+        <li><img src="img/perfil.png" alt="" class="mini-photo"> Mateo Hernández</li>
+        <li><img src="img/perfil.png" alt="" class="mini-photo"> Yuna Kim</li>
+        <li><img src="img/perfil.png" alt="" class="mini-photo"> Liam O'Brien</li>
+      </ul>
+    </section>
+  </div>
   </body>
 </html>

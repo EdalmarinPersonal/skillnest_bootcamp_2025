@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio DOM</title>
+    <style>
+      header {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 4px 4px;
+      }
+      .container {
+        display: flex;
+        margin: 40px;
+      }
+      .perfil {
+        width: 220px;
+        text-align: center;
+        border: 2px solid #333;
+        padding: 10px 0;
+        margin-right: 20px;
+        height: min-content;
+        background: #fff;
+      }
+      .perfil-img img {
+        width: 120px;
+        height: 120px;
+        border-radius: 0;
+        border: none;
+        background: #fff;
+        margin-bottom: 10px;
+      }
+      .feed {
+        flex: 1;
+      }
+      .feed-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .post {
+        background: #f3f3f3;
+        border: 2px solid #333;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        
+      }
+      .post-content {
+        flex: 1;
+      }
+      .post-title {
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+      }
+      .post-actions {
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+      }
+      .like-btn {
+        background: #ffd600;
+        border: none;
+        padding: 8px 18px;
+        font-weight: bold;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+      a {
+        color: #2222ee;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>NetWork</h1>
+    </header>
+    <div class="container">
+      <div class="perfil">
+        <div class="perfil-img">
+          <img src="https://placehold.co/80x80" alt="Foto de perfil" />
+        </div>
+        <strong>Adrien Desplatz</strong>
+      </div>
+      <section class="feed">
+        <div class="feed-title">Your Feed</div>
+        <section class="post">
+          <div class="post-content">
+            <div class="post-title">Linn O.</div>
+            <div>
+              Acabo de configurar este nuevo bot de Discord, cuéntenme que
+              opinan ustedes. <a href="#">link</a>
+            </div>
+          </div>
+          <div class="post-actions">
+            <div><span id="like-linn">0</span> like(s)</div>
+            <button class="like-btn" onclick="btnClick('like-linn')">Like</button>
+          </div>
+        </section>
+        <section class="post">
+          <div class="post-content">
+            <div class="post-title">Lina K.</div>
+            <div>
+              Acabo de terminar este <a href="#">nuevo comic</a>, denle un
+              vistazo.
+            </div>
+          </div>
+          <div class="post-actions">
+            <div><span id="like-lina">0</span> like(s)</div>
+            <button class="like-btn" onclick="btnClick('like-lina')">Like</button>
+          </div>
+        </section>
+        <section class="post">
+          <div class="post-content">
+            <div class="post-title">Mateo H.</div>
+            <div>
+              No puedo dejar de escuchar este <a href="#">album</a>. ¿A quién
+              más le gusta?
+            </div>
+          </div>
+          <div class="post-actions">
+            <div><span id="like-mateo">0</span> like(s)</div>
+            <button class="like-btn" onclick="btnClick('like-mateo')">Like</button>
+          </div>
+        </section>
+      </div>
+    </section>
+    <script>
+        function btnClick(nameID){
+            var span = document.querySelector(`#${nameID}`);
+            var newVal = Number(span.innerText) + 1;  
+            span.innerText = newVal;
+
+        }
+    </script>
+  </body>
+</html>
